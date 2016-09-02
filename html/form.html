@@ -3,9 +3,10 @@
 
   <head>
     <title>Sign-Up</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/form-main.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/form-main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 
   <body>
@@ -18,10 +19,26 @@
 
 <!-- //////////////////// MAIN //////////////////// -->
     <main>
+         <form id="Form">
+    <fieldset>
+      <label for="name" class="std">Full Name: </label>
+      <input type="text" name="name" placeholder="Enter Full Name" required>
+    </fieldset>
+    <fieldset>
+      <label for="phNum" class="std">Phone number: </label>
+      <input type="tel" name="phNum" maxlength="10" placeholder="xxx-xxx-xxxx" required>
+    </fieldset>
+    <fieldset>
+      <label for="email" class="std">e-mail: </label>
+      <input type="email" name="email" placeholder="Enter email" required>
+    </fieldset>
+    <fieldset>
+     <label for="news" class="radio"><h1> Would you like news latter?<h1></label>
+     <input type="radio" name="news" value= "YES">yes
+     <input type="radio" name="news" value= "NO">no
+   </fieldset>
 
-
-
-
+   <button id="submit-btn" type="submit">Confirm + </button>
     </main>
 
 
@@ -31,7 +48,7 @@
     </footer>
 
 
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
   </body>
 
 </html>

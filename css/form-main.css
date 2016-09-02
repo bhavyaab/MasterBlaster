@@ -1,0 +1,42 @@
+body{
+     font-family: 'Roboto', sans-serif;
+     width:960px;
+     margin-left: calc(50% - 510px);
+     margin-top: 30px;
+     font-size: 15px;
+}
+h1, footer{
+     text-align: center;
+}
+main{
+     background: #bbb;
+}
+fieldset, button{
+     margin-bottom: 10px;
+     margin-left: 300px;
+}
+input{
+     padding: 1em;
+     font-weight: 300;
+     width: 50%;
+     text-align: start;
+     font-size: 15px;
+}
+input:hover{
+     border-color: #999;
+     border: none;
+}
+label{
+     margin: 10px;
+     position: relative;
+     display: block;
+     cursor: default;
+     color: #666;
+     text-align:
+}
+button{
+
+    width: 120px;
+    height: 60px;
+    border: none;
+}
