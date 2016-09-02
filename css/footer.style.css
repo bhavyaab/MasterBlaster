@@ -1,0 +1,8 @@
+* {
+  out: dotted 1px red;
+}
+footer {
+  width: 960px;
+  height:40px;
+  background: #D23307;    /*trying to mimic to color of paddle
+}
