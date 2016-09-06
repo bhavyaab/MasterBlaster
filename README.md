@@ -4,8 +4,8 @@ User Stories (MVP)
 
 - As a developer, I would like to add
 - As a user, I would like to view my profile and my past score.
-<!--- As a user I would like to nearest playarea inside 5mile.-->
-<!--- As a user i would like see if in 5 mile radius someone is interested in playing.-->
+-<!--- As a user I would like to nearest playarea inside 5mile.-->
+-<!--- As a user i would like see if in 5 mile radius someone is interested in playing.-->
 
 
 Technical Requirements
