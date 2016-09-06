@@ -10,6 +10,7 @@ var myData = [
     wanaShareLoc: 'no',
     wins: 2,
     losses: 3,
+    image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'RileyR',
@@ -22,6 +23,7 @@ var myData = [
     wanaShareLoc: 'yes',
     wins: 2,
     losses: 3,
+    image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'BileyR',
@@ -34,6 +36,7 @@ var myData = [
     wanaShareLoc: 'no',
     wins: 2,
     losses: 3,
+    image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'Ramank',
@@ -46,6 +49,7 @@ var myData = [
     wanaShareLoc: 'no',
     wins: 2,
     losses: 3,
+    image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'Erin',
@@ -58,6 +62,7 @@ var myData = [
     wanaShareLoc: 'yes',
     wins: 2,
     losses: 3,
+    image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'Bhavyab',
@@ -70,5 +75,6 @@ var myData = [
     wanaShareLoc: 'no',
     wins: 2,
     losses: 3,
+    image: 'http://placehold.it/230x230/000000'
   }
 ];

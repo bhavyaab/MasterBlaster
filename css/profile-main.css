@@ -1,3 +1,6 @@
+main{
+     margin-top: 20px;
+}
 #logIn{
      width: 960px;
      display: block;
@@ -43,10 +46,6 @@ main{
      margin-top: 25px;
      width: 600px;
      padding: 20px;
-}
-footer{
-     height: 120px;
-     background: #444;
 }
 button{
      /* align button */
