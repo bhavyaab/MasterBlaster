@@ -1,0 +1,101 @@
+header {
+  width: 100%;
+  height: 120px;
+  background-color: #888;
+}
+
+header .outer {
+  outline: dashed red 2px;
+  width: 960px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: maroon;
+}
+
+.logo h6 {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+
+.logo p {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  float: right;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+
+.nav_current {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+  background-color: rgba(160,20,20,0.4);
+  width: auto;
+  height: auto;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 26px;
+  color: rgb(160,20,20);
+  text-align: right;
+  padding: 40px 10px 20px 60px;
+}
+
+.div_current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: rgb(160,20,20);
+}
+
+.nav_other {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+  background-color: rgba(160,20,20,0.4);
+  width: auto;
+  height: auto;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 26px;
+  color: rgba(80,80,80,0.6)
+  text-align: right;
+  padding: 40px 10px 20px 60px;
+}
+
+.div_other {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: black;
+}
+
+.icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 30px;
+  left: 10px;
+}
+
+h4 {
+  color: white;
+}
