@@ -1,0 +1,40 @@
+
+* {
+  outline: dotted 1px red;
+}
+html {
+  width: 960px;
+  height: 100%;
+}
+body {
+  background: #444;
+  font-family: 'Ubuntu', sans-serif;
+  font: 18px;
+}
+main {
+  position: relative;
+  width:960px;
+  height:920px;
+}
+
+footer {
+  width: 960px;
+  height:50px;
+  background: #D23307;
+  position: absolute;
+  margin-top: 900px;
+}
+footer span {
+  text-decoration:none;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+}
+footer span:first-child {
+  margin-left: 300px;
+}
+span#us {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}

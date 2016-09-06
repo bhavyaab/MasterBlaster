@@ -1,38 +1,29 @@
-// generate Data object
-function Person(name, ranking, phNum, email, wana_play, wana_share_loc ){
-  this.name = name;
-  this.ranking = ranking;
-  this.phNum = phNum;
-  this.email = email;
-  this.wana_play = wana_play;
-  this.wana_share_loc = wana_share_loc;
+//ranking of each user
+var scores = [];
+for(i = 0; i < myData.length; i++){
+  scores.push(myData[i].score);
 };
-var data = []; //data of all people.
+//short array ranking by order off smaller to higher
 
-function sign_up(event){
-  event.preventDefault();
-  localStorage.clear;
-  var name = event.target.name.value;
-  var ranking = 0;
-  var phNum = event.target.phNum.value;
-  var email = event.target.email.value;
-  var wana_play = event.target.wana_play.value;
-  var wana_share_loc = event.target.wana_share_loc.value;
-  data.push(new Person(name, ranking, phNum, email, wana_play, wana_share_loc ));
-  form.reset();
-}
-//Function for error catching
-
-document.getElementById('form').addEventListener('submit', sign_up); //eventListner is been called by submit btn.//
-
-//save data generated from the form
-if (localStorage.list) {
-  var list = localStorage.list.split(',');
-} else {
-  var list = [];
+function compareNumbers(a, b){
+  return a - b;
 };
-function saveInfo(){
-list.push(new Person(name, ranking, phNum, email, wana_play, wana_share_loc));
-
-
-}
+//comapir the array ranking and find the heighest score
+var ranking = scores.slice();
+//copy the scores to another array
+ranking = ranking.sort(compareNumbers);
+//find the top three scorer
+var numOne = scores.indexOf(ranking[ranking.length - 1]);
+var numTwo = scores.indexOf(ranking[ranking.length - 2]);
+var numThree = scores.indexOf(ranking[ranking.length - 3]);
+//DOM
+var div = document.getElementById('rank');
+var ul = document.createElement('ul');
+ul.innerHTML = '<li> Name: ' + myData[numOne].name + '</li> <li> Score: ' + myData[numOne].score + '</li>';
+div.appendChild(ul);
+ul = document.createElement('ul');
+ul.innerHTML = '<li> Name: ' + myData[numTwo].name + '</li> <li> Score: ' + myData[numTwo].score + '</li>';
+div.appendChild(ul);
+ul = document.createElement('ul');
+ul.innerHTML = '<li> Name: ' + myData[numThree].name + '</li> <li> Score: ' + myData[numThree].score + '</li>';
+div.appendChild(ul);
