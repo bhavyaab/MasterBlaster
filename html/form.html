@@ -20,6 +20,18 @@
 <!-- //////////////////// MAIN //////////////////// -->
     <main>
     <form id="Form">
+     <!-- <fieldset>
+     <label for="image" class="img"></label>
+     <input type="file" name="image" value="upload" placeholder="http://placehold.it/100x100/#666">
+    </fieldset> -->
+    <fieldset>
+      <label for="userName" class="std">Choose User Name: </label>
+      <input type="text" name="userName" placeholder="Choose User Name" maxlength="20" required>
+    </fieldset>
+    <fieldset>
+      <label for="password" class="std">Password</label>
+      <input type="password" name="password" placeholder="choose password" maxlength="20" required>
+    </fieldset>
     <fieldset>
       <label for="name" class="std">Full Name: </label>
       <input type="text" name="name" placeholder="Enter Full Name" required>
@@ -48,7 +60,7 @@
     </footer>
 
 
-    <script src="../app.js"></script>
+    <script src="../js/form.js"></script>
   </body>
 
 </html>
