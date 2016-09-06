@@ -1,42 +1,56 @@
-main{
-     font-family: 'Roboto', sans-serif;
-     width:960px;
-     margin-left: calc(50% - 510px);
-     margin-top: 30px;
-     font-size: 15px;
-     color: #6e6e6e;
-     background: ##f2f2f0;
+main {
+  width:960px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(48,48,48);
 }
-h1, footer{
-     text-align: center;
+
+form {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid rgb(190,144,100) 2px;
+  background-color: rgb(68,68,68);
 }
-main{
-     background: #f2f2f0;
+
+fieldset {
+  text-align: center;
+  padding: 20px;
 }
-fieldset, button{
-     margin-bottom: 10px;
-     margin-left: 300px;
+
+label {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: white;
 }
-input{
-     padding: 1em;
-     font-weight: 300;
-     width: 50%;
-     text-align: start;
-     font-size: 15px;
+
+input {
+  display: inline-block;
 }
-input:hover{
-     border-color: #999;
+
+input:hover {
+  outline: solid rgb(210,16,26) 2px;
 }
-label{
-     margin: 10px;
-     position: relative;
-     display: block;
-     cursor: default;
-     color: #666;
+
+.button {
+  width: 200px;
+  margin: auto;
+  padding-bottom: 20px;
 }
-button{
-    background: #00536e;
-    width: 120px;
-    height: 60px;
-    border: none;
+
+button {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  margin: auto;
+  color: white;
+  background-color: rgb(48,48,48);
+  border-radius: 30%;
+  padding: 10px;
+  transition: 500ms all;
+}
+
+button:hover {
+  background-color: rgb(210,16,26);
 }
