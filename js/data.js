@@ -7,8 +7,9 @@ var myData = [
     phNum: 9999998888,
     email: 'abc@efg.com',
     wanaPlay: 'yes',
-    wanaShareLoc: 'no'
-
+    wanaShareLoc: 'no',
+    wins: 2,
+    losses: 3,
   },
   {
     userName: 'RileyR',
@@ -18,7 +19,9 @@ var myData = [
     phNum: 9990009898,
     email: 'riley@gin.com',
     wanaPlay: 'yes',
-    wanaShareLoc: 'yes'
+    wanaShareLoc: 'yes',
+    wins: 2,
+    losses: 3,
   },
   {
     userName: 'BileyR',
@@ -28,7 +31,9 @@ var myData = [
     phNum: 9993239898,
     email: 'biley@gin.com',
     wanaPlay: 'no',
-    wanaShareLoc: 'no'
+    wanaShareLoc: 'no',
+    wins: 2,
+    losses: 3,
   },
   {
     userName: 'Ramank',
@@ -38,7 +43,9 @@ var myData = [
     phNum: 9993232398,
     email: 'rfgy@gin.com',
     wanaPlay: 'no',
-    wanaShareLoc: 'no'
+    wanaShareLoc: 'no',
+    wins: 2,
+    losses: 3,
   },
   {
     userName: 'Erin',
@@ -48,7 +55,9 @@ var myData = [
     phNum: 9234567898,
     email: 'erinl@gin.com',
     wanaPlay: 'no',
-    wanaShareLoc: 'yes'
+    wanaShareLoc: 'yes',
+    wins: 2,
+    losses: 3,
   },
   {
     userName: 'Bhavyab',
@@ -58,6 +67,8 @@ var myData = [
     phNum: 9334239898,
     email: 'bhavya@gin.com',
     wanaPlay: 'yes',
-    wanaShareLoc: 'no'
+    wanaShareLoc: 'no',
+    wins: 2,
+    losses: 3,
   }
 ];

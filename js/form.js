@@ -1,5 +1,5 @@
 // generate Data object
-function Person(username, password, name, ranking, phNum, email, wana_play, wana_share_loc ){
+function Person(username, password, name, ranking, phNum, email, wana_play, wana_share_loc,){
   this.userName = userName;
   this.password = password;
   this.name = name;
@@ -8,6 +8,8 @@ function Person(username, password, name, ranking, phNum, email, wana_play, wana
   this.email = email;
   this.wana_play = wana_play;
   this.wana_share_loc = wana_share_loc;
+  this.wins = 0;
+  this.losses = 0;
 };
 var data = []; //data of all people.
 //Function for error catching

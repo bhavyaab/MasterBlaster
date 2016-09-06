@@ -64,21 +64,36 @@
 
 
 <!-- //////////////////// MAIN //////////////////// -->
-    <main>
+<main>
+  <section id="logIn">
+    <fieldset>
+      <label for="userName">User Name</label>
+      <input type="text" name="userName" placeholder="User Name" required>
+     </fieldset>
+     <fieldset>
+       <label for="password">Password</label>
+       <input type="password" name="password" placeholder="Password" required>
+     </fieldset>
+  </section>
+  <section>
+     <img src="http://placehold.it/230x230/111111">
 
-
-
-
-    </main>
-
-
+     <ul>
+       <li class='name'>Name: </li>
+       <li>Scores: </li>
+       <li>Wins: </li>
+       <li>Losses: </li>
+       <li>Last Played</li>
+     </ul>
+     <button>Update Scores</button>
+  </section>
+</main>
 <!-- //////////////////// FOOTER //////////////////// -->
     <footer>
       <h4>Footer Goes Here</h4>
     </footer>
 
-
-    <script src="app.js"></script>
+    <script src="../js/data.js"></script>
   </body>
 
 </html>

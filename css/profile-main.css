@@ -1,0 +1,52 @@
+header{
+     height: 120px;
+     background: #444;
+}
+#logIn{
+     width: 960px;
+     display: block;
+     text-align: center;
+}
+fieldset{
+     padding: 10px;
+     font-size: 30px;
+}
+input{
+     padding: 5px;
+     font-size: 20px;
+}
+main{
+     height: 400px;
+     width: 960px;
+     background: #ccc;
+     margin-left: calc(50% - 480px);
+}
+img{
+     padding: 20px;
+}
+.name{
+     display: inline-block;
+     vertical-align: top;
+     font-size: 35px;
+     font-weight: bold;
+     align-self: center;
+     margin-top: 10px;
+     outline: dashed 2px blue;
+}
+ul{
+     outline: dashed 2px orange;
+     display: inline-block;
+     vertical-align: top;
+     font-family: 'Droid Sans';
+     font-size: 30px;
+     margin-top: 25px;
+     width: 600px;
+     padding: 20px;
+}
+footer{
+     height: 120px;
+     background: #444;
+}
+button{
+     /* align button */
+}
