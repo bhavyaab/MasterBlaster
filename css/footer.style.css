@@ -16,9 +16,7 @@ main {
   width:960px;
   height:920px;
 }
-ul li a:hover {
-  text-transform: none;
-}
+
 footer {
   width: 960px;
   height:50px;

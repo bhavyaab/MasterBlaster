@@ -4,12 +4,14 @@ body{
      margin-left: calc(50% - 510px);
      margin-top: 30px;
      font-size: 15px;
+     color: #6e6e6e;
+     background: ##f2f2f0;
 }
 h1, footer{
      text-align: center;
 }
 main{
-     background: #bbb;
+     background: #f2f2f0;
 }
 fieldset, button{
      margin-bottom: 10px;
@@ -24,7 +26,6 @@ input{
 }
 input:hover{
      border-color: #999;
-     border: none;
 }
 label{
      margin: 10px;
@@ -32,10 +33,9 @@ label{
      display: block;
      cursor: default;
      color: #666;
-     text-align:
 }
 button{
-
+    background: #00536e;
     width: 120px;
     height: 60px;
     border: none;

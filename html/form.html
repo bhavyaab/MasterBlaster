@@ -20,6 +20,18 @@
 <!-- //////////////////// MAIN //////////////////// -->
     <main>
     <form id="Form">
+     <!-- <fieldset>
+     <label for="image" class="img"></label>
+     <input type="file" name="image" value="upload" placeholder="http://placehold.it/100x100/#666">
+    </fieldset> -->
+    <fieldset>
+      <label for="userName" class="std">Choose User Name: </label>
+      <input type="text" name="userName" placeholder="Choose User Name" maxlength="20" required>
+    </fieldset>
+    <fieldset>
+      <label for="password" class="std">Password</label>
+      <input type="password" name="password" placeholder="choose password" maxlength="20" required>
+    </fieldset>
     <fieldset>
       <label for="name" class="std">Full Name: </label>
       <input type="text" name="name" placeholder="Enter Full Name" required>
@@ -32,11 +44,16 @@
       <label for="email" class="std">e-mail: </label>
       <input type="email" name="email" placeholder="Enter email" required>
     </fieldset>
-    <fieldset>
-     <label for="news" class="radio"><h1> Would you like news latter?<h1></label>
-     <input type="radio" name="news" value= "YES">yes
-     <input type="radio" name="news" value= "NO">no
+    <fieldset id="radio">
+     <label for="wana_share_loc" class="radio"><h1> Would you like to share your location?</h1></label>
+     <input type="radio" name="wana_share_loc" value= "YES">yes
+     <input type="radio" name="wana_share_loc" value= "NO">no
    </fieldset>
+   <fieldset id="radio">
+   <label for="wana_play" class="radio"><h1>Are you ready to play?</h1></label>
+   <input type="radio" name="wana_play" value= "YES">yes
+   <input type="radio" name="wana_play" value= "NO">no
+ </fieldset>
 
    <button id="submit-btn" type="submit">Confirm + </button>
     </main>
@@ -47,8 +64,9 @@
       <h4>Footer Goes Here</h4>
     </footer>
 
-
+    <script src="../data.js"></script>
     <script src="../app.js"></script>
+    <script src="../js/form.js"></script>
   </body>
 
 </html>
