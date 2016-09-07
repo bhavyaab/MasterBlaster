@@ -31,8 +31,51 @@ main {
   text-align: center;
 }
 
+#login_form {
+  outline: dashed 2px red;
+  width: 960px;
+  height: 400px;
+  margin: 0 auto;
+}
 
-#logIn{
+#login_form fieldset {
+  text-align: center;
+  padding: 20px;
+}
+
+#login_form label {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+#login_form input {
+  display: inline-block;
+}
+
+#login_form input:hover {
+  outline: solid rgb(210,16,26) 2px;
+}
+
+#login_form button {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  margin: auto;
+  color: white;
+  background-color: rgb(48,48,48);
+  border-radius: 30%;
+  padding: 10px;
+  transition: 500ms all;
+}
+
+#login_form button:hover {
+  background-color: rgb(210,16,26);
+}
+
+
+
+
+/*#logIn{
      width: 960px;
      display: block;
      text-align: center;
@@ -74,4 +117,4 @@ input{
 }
 button{
      /* align button */
-}
+}*/
