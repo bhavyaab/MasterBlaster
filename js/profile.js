@@ -3,6 +3,7 @@ var signIn = document.getElementById('login_form');
 var info = document.getElementById('info');
 signIn.style.display = 'block';
 info.style.display = 'none';
+var setFlag
 //declear function to show up info
 function showInfo(j) {
   signIn.style.display = 'none';
@@ -14,15 +15,10 @@ function showInfo(j) {
   ul.setAttribute('class', 'info');
   var myName = document.createElement('li');
   myName.innerHTML = myData[j].name;
-  var btn = document.createElement('button');
-  btn.setAttribute('id', 'update');
-  btn.setAttribute('type', 'submit');
-  btn.innerHTML = 'update score'
   var myInfo = document.createElement('ul');
-  myInfo.innerHTML = '<li>Score: ' + myData[j].score + '</li><li> Wins: ' + myData[j].wins + '</li><li>Losses: ' + myData[j].losses + '</li>';
+  myInfo.innerHTML = '<li>Score: ' + myData[j].score + '</li><li> Wins: ' + myData[j].wins + '</li><li>Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
   ul.appendChild(myName);
   ul.appendChild(myInfo);
-  ul.appendChild(btn);
   info.appendChild(img);
   info.appendChild(ul);
   document.body.appendChild(info);
@@ -41,17 +37,18 @@ function others(){
   };
 };
 //page load save info
-function onLoad(){
 //check if local storage have list of privious
-  if(localStorage.signIn){
-    for (var i = 0; i < myData.length; i++){
-      if(myData[i].userName === localStorage.signIn){
-        var j = i;
-        showInfo(j);
-      };
-    }
+if(localStorage.signIn){
+  console.log('I am localStorage');
+  for (var i = 0; i < myData.length; i++){
+    if(localStorage.signIn === myData[i].userName){
+      var j = i;
+      showInfo(j);
+      others();
+    };
   }
 }
+
 
 //add userName and passWord input area form DOM
 //check if username and password is right
@@ -61,7 +58,6 @@ function check(event){
   var password = event.target.passWord.value;
   for(var i = 0; i < myData.length; i++){
     if(username === myData[i].userName && password === myData[i].passWord){
-      console.log('userName =', myData[i].userName, 'passWord =', myData[i].passWord);
       localStorage.signIn = username;
       var j = i;
     };
@@ -74,6 +70,7 @@ function check(event){
     info.style.display = 'none';
     alert('username or password is worng!!');
   };
+  return setFlag;
 };
 //update scores
 function updateScore(event){
@@ -83,6 +80,5 @@ function updateScore(event){
 }
 
 //infoPage(3);
-// onLoad();
 document.getElementById('login_form').addEventListener('submit', check);
 document.getElementById('update').addEventListener('submit', updateScore);
