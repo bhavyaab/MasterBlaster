@@ -7,21 +7,16 @@ main {
 
 .hero {
   position: relative;
-  width: 940px;
-  height: 420px;
+  width: 920px;
+  height: 400px;
+  margin: auto;
+  padding: 10px;
   border: solid rgba(242,242,242,0.6) 10px;
 }
 
-section.hero:after {
-  content: "";
-  background-image: url("../img/hero2.jpg");
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.bhero {
   position: absolute;
-  z-index: 1;
+  opacity: 0.6
 }
 
 .hero h1 {
