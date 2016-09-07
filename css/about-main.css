@@ -1,7 +1,5 @@
 main {
-  outline: dashed 2px orange;
   width: 960px;
-  height: 800px;
   margin: 0 auto;
   margin-top: 20px;
   background-color: rgb(68,68,68);
@@ -30,4 +28,64 @@ main {
   font-size: 100px;
   color: rgb(242,242,242);
   text-align: center;
+}
+
+/*////////// CONTENT //////////*/
+.about_content {
+  outline: dashed 2px red;
+  width: 960px;
+  height: 1400px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.content {
+  outline: dashed 2px gold;
+  position: relative;
+  width: 960px;
+  height: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.wwa_pic {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about_subheader {
+  outline: dashed 2px green;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 460px;
+  height: 40px;
+  padding-bottom: 10px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: rgb(242,242,242);
+}
+
+.line {
+  position: absolute;
+  right: 320px;
+  top: 60px;
+  width: 140px;
+  height: 5px;
+  background-color: rgb(242,242,242);
+}
+
+.about_text {
+  outline: dashed 2px red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  height: 315px;
+  padding: 0 30px 0 30px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: rgb(242,242,242);
+  text-align: left;
 }
