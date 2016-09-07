@@ -70,8 +70,8 @@ ul {
 .div_current {
   position: absolute;
   bottom: 10px;
-  left: 0 auto;
-  width: 80px;
+  left: 0;
+  width: 100%;
   height: 3px;
   background-color: rgb(238,60,66);
 }
@@ -124,58 +124,58 @@ footer {
   margin-top: 20px;
   }
 
-  .div_footer {
-    position: relative;
-    width: 960px;
-    height: 60px;
-    margin: 0 auto;
-  }
+.div_footer {
+  position: relative;
+  width: 960px;
+  height: 60px;
+  margin: 0 auto;
+}
 
-  .email {
-    position: absolute;
-    left: 5%;
-    top: calc(50% - 30px);
-    width: 300px;
-    height: 60px;
-  }
+.email {
+  position: absolute;
+  left: 5%;
+  top: calc(50% - 30px);
+  width: 300px;
+  height: 60px;
+}
 
-  .emailicon {
-    float: left;
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-  }
+.emailicon {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
 
-  .footer_email {
-    float: left;
-    margin-left: 5px;
-    margin-top: 22px;
-    font-family: 'Droid Sans', sans-serif;
-    font-size: 16px;
-    color: white;
-  }
+.footer_email {
+  float: left;
+  margin-left: 5px;
+  margin-top: 22px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+}
 
-  .footer_copyright {
-    position: absolute;
-    left: calc(50% - 100px);
-    top: 20px;
-    width: 200px;
-    font-family: 'Droid Sans', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    color: white;
-  }
+.footer_copyright {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 20px;
+  width: 200px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
 
-  .codefellows {
-    position: absolute;
-    right: 5%;
-    top: calc(50% - 20px);
-    width: 180px;
-    height: 40px;
-    background-color: rgba(242,242,242,0.4);
-  }
+.codefellows {
+  position: absolute;
+  right: 5%;
+  top: calc(50% - 20px);
+  width: 180px;
+  height: 40px;
+  background-color: rgba(242,242,242,0.4);
+}
 
-  .cflogo {
-    width: 180px;
-    height: 40px;
-  }
+.cflogo {
+  width: 180px;
+  height: 40px;
+}
