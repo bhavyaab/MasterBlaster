@@ -1,7 +1,5 @@
 main {
-  outline: dashed 2px orange;
   width: 960px;
-  height: 800px;
   margin: 0 auto;
   margin-top: 20px;
   background-color: rgb(68,68,68);
