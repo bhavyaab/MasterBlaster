@@ -1,7 +1,5 @@
 main {
-  outline: dashed 2px orange;
   width: 960px;
-  height: 800px;
   margin: 0 auto;
   margin-top: 20px;
   background-color: rgb(68,68,68);
@@ -35,6 +33,55 @@ main {
   width: 600px;
   font-family: 'Permanent Marker', cursive;
   font-size: 100px;
+  color: rgb(242,242,242);
+  text-align: center;
+}
+
+/*////// TOP 10 //////*/
+#rank {
+  outline: dashed black 6px;
+  width: 960px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#rank ul {
+  outline: solid 2px red;
+  width: 700px;
+  padding: 10px;
+  margin: 20px 80px 20px 60px;
+}
+
+#rank ul li:first-child {
+  display: inline-block;
+  width: 60px;
+  padding: 10px;
+  border: solid white 2px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  color: rgb(242,242,242);
+  text-align: center;
+}
+
+#rank ul li:nth-child(2) {
+  display: inline-block;
+  width: 400px;
+  padding: 10px;
+  border: solid red 2px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 30px;
+  color: rgb(242,242,242);
+  text-align: left;
+}
+
+#rank ul li:last-child {
+  display: inline-block;
+  width: 200;
+  padding: 10px;
+  border: solid orange 2px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
   color: rgb(242,242,242);
   text-align: center;
 }
