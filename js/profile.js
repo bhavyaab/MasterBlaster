@@ -43,19 +43,9 @@ function others(){
 //page load save info
 function onLoad(){
 //check if local storage have list of privious
-  if (localStorage.list) {
-    var list = localStorage.list.split(',');
-  } else {
-    var list = [];
-  };
-//save username and password
-  list.push('username - ' + event.target.userName.value);
-  list.push('password - ' + event.target.passWord.value);
-  localStorage.list = list;
-//add that to username and password field
-  var uName = document.getElementsByName('userName');
-  var pwd = document.getElementsByName('passWord'); 
-}
+if(localStorage.signIn){}
+
+
 //add userName and passWord input area form DOM
 //check if username and password is right
 function check(event){
@@ -65,6 +55,7 @@ function check(event){
   for(var i = 0; i < myData.length; i++){
     if(username === myData[i].userName && password === myData[i].passWord){
       console.log('userName =', myData[i].userName, 'passWord =', myData[i].passWord);
+      localStorage.signIn = username;
       var j = i;
     };
   }
