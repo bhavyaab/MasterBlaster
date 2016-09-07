@@ -1,6 +1,42 @@
-main{
-     margin-top: 20px;
+main {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgb(68,68,68);
 }
+
+/*//////////// HERO ////////////*/
+.hero {
+  position: relative;
+  width: 940px;
+  height: 420px;
+  border: solid rgba(242,242,242,0.6) 10px;
+}
+
+section.hero::after {
+  content: "";
+  background-image: url("../img/hero1.jpg");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  width: 600px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 100px;
+  color: rgb(242,242,242);
+  text-align: center;
+}
+
+
+
 #logIn{
      width: 960px;
      display: block;
@@ -18,12 +54,6 @@ input{
      padding: 10px 30px;
      font-size: 20px;
      cursor: pointer;
-}
-main{
-     height: 400px;
-     width: 960px;
-     background: #ccc;
-     margin-left: calc(50% - 480px);
 }
 .pic{
      padding: 20px;
