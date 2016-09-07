@@ -1,7 +1,7 @@
 var myData = [
   {
     userName: 'BrianN',
-    password: 'pwd',
+    passWord: 'pwd',
     name: 'Brian Nations',
     score: 230,
     phNum: 9999998888,
@@ -14,7 +14,7 @@ var myData = [
   },
   {
     userName: 'RileyR',
-    password: 'pwd',
+    passWord: 'pwd',
     name: 'Riley Rose',
     score: 24,
     phNum: 9990009898,
@@ -27,7 +27,7 @@ var myData = [
   },
   {
     userName: 'BileyR',
-    password: 'pwd',
+    passWord: 'pwd',
     name: 'Biley Rose',
     score: 289,
     phNum: 9993239898,
@@ -40,7 +40,7 @@ var myData = [
   },
   {
     userName: 'Ramank',
-    password: 'pwd',
+    passWord: 'pwd',
     name: 'Raman Kumar',
     score: 12,
     phNum: 9993232398,
@@ -53,7 +53,7 @@ var myData = [
   },
   {
     userName: 'Erin',
-    password: 'pwd',
+    passWord: 'pwd',
     name: 'Erin Lee',
     score: 279,
     phNum: 9234567898,
@@ -66,7 +66,7 @@ var myData = [
   },
   {
     userName: 'Bhavyab',
-    password: 'pwd',
+    passWord: 'pwd',
     name: 'Bhavya Bharti',
     score: 65,
     phNum: 9334239898,
