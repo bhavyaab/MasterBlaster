@@ -43,8 +43,15 @@ function others(){
 //page load save info
 function onLoad(){
 //check if local storage have list of privious
-if(localStorage.signIn){}
-
+  if(localStorage.signIn){
+    for (var i = 0; i < myData.length; i++){
+      if(myData[i].userName === localStorage.signIn){
+        var j = i;
+        showInfo(j);
+      };
+    }
+  }
+}
 
 //add userName and passWord input area form DOM
 //check if username and password is right
@@ -68,8 +75,14 @@ function check(event){
     alert('username or password is worng!!');
   };
 };
+//update scores
+function updateScore(event){
+  event.preventDefault();
+  var info = document.getElementById('info');
 
+}
 
 //infoPage(3);
-document.getElementById('login_form').addEventListener('submit', check);
 // onLoad();
+document.getElementById('login_form').addEventListener('submit', check);
+document.getElementById('update').addEventListener('submit', updateScore);
