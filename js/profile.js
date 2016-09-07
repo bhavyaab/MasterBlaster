@@ -14,10 +14,15 @@ function showInfo(j) {
   ul.setAttribute('class', 'info');
   var myName = document.createElement('li');
   myName.innerHTML = myData[j].name;
-  var myInfo = document.createElement('li');
-  myInfo.innerHTML = 'Score: ' + myData[j].score + '</li><li> Wins: ' + myData[j].wins + '</li><li>Losses: ' + myData[j].losses;
+  var btn = document.createElement('button');
+  btn.setAttribute('id', 'update');
+  btn.setAttribute('type', 'submit');
+  btn.innerHTML = 'update score'
+  var myInfo = document.createElement('ul');
+  myInfo.innerHTML = '<li>Score: ' + myData[j].score + '</li><li> Wins: ' + myData[j].wins + '</li><li>Losses: ' + myData[j].losses + '</li>';
   ul.appendChild(myName);
   ul.appendChild(myInfo);
+  ul.appendChild(btn);
   info.appendChild(img);
   info.appendChild(ul);
   document.body.appendChild(info);
@@ -25,9 +30,9 @@ function showInfo(j) {
 };
 //others info
 function others(){
-  var div = document.getElementById('others');
   var z = ranking.length - 1;
   for(var r = z; r > -1; r--){
+    var div = document.getElementById('others');
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
     var ul = document.createElement('ul');
     var s = r + 1;
@@ -35,6 +40,12 @@ function others(){
     div.appendChild(ul);
   };
 };
+//page load save info
+function onLoad(){
+//check if local storage have list of privious
+if(localStorage.signIn){}
+
+
 //add userName and passWord input area form DOM
 //check if username and password is right
 function check(event){
@@ -44,6 +55,7 @@ function check(event){
   for(var i = 0; i < myData.length; i++){
     if(username === myData[i].userName && password === myData[i].passWord){
       console.log('userName =', myData[i].userName, 'passWord =', myData[i].passWord);
+      localStorage.signIn = username;
       var j = i;
     };
   }
@@ -60,3 +72,4 @@ function check(event){
 
 //infoPage(3);
 document.getElementById('login_form').addEventListener('submit', check);
+// onLoad();
