@@ -18,6 +18,8 @@ var div = document.getElementById('rank');
 for(var r = 0; r < 3; r++){
   var numOne = scores.indexOf(ranking[ranking.length - r - 1]);
   var ul = document.createElement('ul');
-  ul.innerHTML = '<li> Name: ' + myData[numOne].name + '</li> <li> Score: ' + myData[numOne].score + '</li>';
+  var s = r + 1;
+  ul.innerHTML = '<li>' + s + '</li><li> Name: ' + myData[numOne].name + '</li> <li> Score: ' + myData[numOne].score + '</li>';
   div.appendChild(ul);
+
 }
