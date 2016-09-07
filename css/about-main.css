@@ -32,15 +32,13 @@ main {
 
 /*////////// CONTENT //////////*/
 .about_content {
-  outline: dashed 2px red;
   width: 960px;
-  height: 1400px;
+  height: 820px;
   margin: auto;
   margin-top: 20px;
 }
 
 .content {
-  outline: dashed 2px gold;
   position: relative;
   width: 960px;
   height: 400px;
@@ -48,14 +46,14 @@ main {
   margin-top: 20px;
 }
 
+/*////// WHO WE ARE //////*/
 .wwa_pic {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.about_subheader {
-  outline: dashed 2px green;
+.wwa_subheader {
   position: absolute;
   right: 0;
   top: 10px;
@@ -67,7 +65,7 @@ main {
   color: rgb(242,242,242);
 }
 
-.line {
+.wwa_line {
   position: absolute;
   right: 320px;
   top: 60px;
@@ -76,8 +74,7 @@ main {
   background-color: rgb(242,242,242);
 }
 
-.about_text {
-  outline: dashed 2px red;
+.wwa_text {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -88,4 +85,109 @@ main {
   font-size: 20px;
   color: rgb(242,242,242);
   text-align: left;
+}
+
+/*////// RULES //////*/
+.rules_pic {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.rules_subheader {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 460px;
+  height: 40px;
+  padding-bottom: 10px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: rgb(242,242,242);
+}
+
+.rules_line {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 140px;
+  height: 5px;
+  background-color: rgb(242,242,242);
+}
+
+.rules_text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 315px;
+  padding: 0 30px 0 30px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: rgb(242,242,242);
+  text-align: left;
+}
+
+/*////////// FOUNDERS //////////*/
+.founders {
+  position: relative;
+  width: 960px;
+  height: 360px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.founders h3 {
+  position: absolute;
+  top: 20px;
+  width: 960px;
+  height: 40px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: rgb(242,242,242);
+  text-align: center;
+}
+
+.left {
+  position: absolute;
+  top: 160px;
+  left: 15px;
+  width: 180px;
+  height: 80px;
+  padding-bottom: 10px;
+  border-bottom: solid rgb(242,242,242) 4px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 40px;
+  color: rgb(242,242,242);
+  text-align: center;
+}
+
+.michael {
+  position: absolute;
+  left: 210px;
+  bottom: 20px;
+  width: 260px;
+  height: 260px;
+}
+
+.right {
+  position: absolute;
+  top: 160px;
+  right: 15px;
+  width: 180px;
+  height: 80px;
+  padding-bottom: 10px;
+  border-bottom: solid rgb(242,242,242) 4px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 40px;
+  color: rgb(242,242,242);
+  text-align: center;
+}
+
+.bhavya {
+  position: absolute;
+  right: 210px;
+  bottom: 20px;
+  width: 260px;
+  height: 260px;
 }
