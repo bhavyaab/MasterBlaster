@@ -13,13 +13,12 @@ var ranking = scores.slice();
 //copy the scores to another array
 ranking = ranking.sort(compareNumbers);
 //find the top three scorer
-//DOM
+//through DOM fetch div section
 var div = document.getElementById('rank');
 for(var r = 0; r < 3; r++){
-  var numOne = scores.indexOf(ranking[ranking.length - r - 1]);
+  var place = scores.indexOf(ranking[ranking.length - r - 1]);
   var ul = document.createElement('ul');
   var s = r + 1;
-  ul.innerHTML = '<li>' + s + '</li><li> Name: ' + myData[numOne].name + '</li> <li> Score: ' + myData[numOne].score + '</li>';
+  ul.innerHTML = '<li>' + s + '</li><li> Name: ' + myData[place].name + '</li> <li> Score: ' + myData[place].score + '</li>';
   div.appendChild(ul);
-
 }
