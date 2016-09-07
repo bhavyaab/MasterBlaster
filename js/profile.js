@@ -1,8 +1,8 @@
 //make profile info hide and signIn block display
 var signIn = document.getElementById('login_form');
-// var info = document.getElementById('info');
+var info = document.getElementById('info');
 signIn.style.display = 'block';
-// info.style.display = 'none';
+info.style.display = 'none';
 //add userName and passWord input area form DOM
 //check if username and password is right
 function check(event){
@@ -11,51 +11,46 @@ function check(event){
   alert('this event fired');
   var username = event.target.userName.value;
   var password = event.target.passWord.value;
-  for(i = 0; i < myData.length; i++){
-    if(username === myData[i].userName && password === myData[i].password){
-      var info = document.getElementById('info');//section of info
-      var img = document.createElement('img');
-      img.setAttribute('class', 'pic');//create image element
-      img.setAttribute('src', myData[i].image);// append src to img tag
-      var ul = document.createElement('ul');
-      ul.setAttribute('class', 'info');
-      var li1 = document.createElement('li');
-      li1.setAttribute('class', 'name');
-      li1.appendChild(myData[i].name);
-      var li2 = document.createElement('li');
-      li2.appendChild('Score: ' + myData[i].score + '</li><li> Wins: ' + myData[i].wins + '</li><li>Losses: ');
-      ul.appendChild('li1');
-      ul.appendChild('li2');
-      var button = document.createElement('button').setAttribute('type', 'submit');
-      button.setAttribute('id', 'update');
-      info.appendChild('img');
-      info.appendChild('ul');
-      info.appendChild('button');
+  for(var i = 0; i < myData.length; i++){
+    if(username === myData[i].userName && password === myData[i].passWord){
+         var j = i;
+         return j;
     }else{
       signIn.style.display = 'block';
       info.style.display = 'none';
-      alert('userName or passWord is worng!!');
+      alert('username or password is worng!!');
+      return;
     };
+    new ShowInfo(j);
   }
 }
 //declear function to show up info
-function infoPage(){
-  var info = document.getElementById('info');//section of info
-  var img = document.createElement('img').setAttribute('class', 'pic');//create image element
-  img.setAttribute('src', 'myData[i].image');// append src to img tag
-  var ul = document.createElement('ul').setAttribute('class', 'info');
-  var li1 = document.createElement('li').setAttribute('class', 'name');
-  li1.appendChild(myData[i].name);
-  var li2 = document.createElement('li');
-  li2.appendChild('Score: ' + myData[i].score + '</li><li> Wins: ' + myData[i].wins + '</li><li>Losses: ');
-  ul.appendChild('li1');
-  ul.appendChild('li2');
-  var button = document.createElement('button').setAttribute('type', 'submit');
-  button.setAttribute('id', 'update');
-  info.appendChild('img');
-  info.appendChild('ul');
-  info.appendChild('button');
-};
+function ShowInfo(n){
+ console.log(myData[n].userName);
+ console.log(myData[n].passWord);
+ signIn.style.display = 'none';
+ info.style.display = 'block';
+ var img = document.createElement('img');
+ img.setAttribute('class', 'pic');//create image element
+ img.setAttribute('src', myData[n].image);// append src to img tag
+ var ul = document.createElement('ul');
+ ul.setAttribute('class', 'info');
+ var myName = document.createElement('li');
+ myName.innerHTML = myData[n].name;
+ var myInfo = document.createElement('li');
+ myInfo.innerHTML = 'Score: ' + myData[n].score + '</li><li> Wins: ' + myData[n].wins + '</li><li>Losses: ' + myData[n].losses;
+ ul.innerHTML = 'myName';
+ ul.innerHTML = 'myInfo';
+ var button = document.createElement('button');
+ button.setAttribute('type', 'submit');
+ button.setAttribute('id', 'update');
+ button.innerHTML = 'update';
+ info.innerHTML = 'img';
+ info.innerHTML = 'ul';
+ info.innerHTML = 'button';
+ document.body.appendChild(info);
+ return;
+}
 //infoPage(3);
 document.getElementById('login_form').addEventListener('submit', check);
 
