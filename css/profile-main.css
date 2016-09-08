@@ -169,7 +169,6 @@ main {
 
 /*// NUMBER LI //*/
 #others ul li:first-child {
-  display: none;
 }
 
 /*// NAME LI //*/
