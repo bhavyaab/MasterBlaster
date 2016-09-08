@@ -27,7 +27,6 @@ function others(){
     var div = document.getElementById('others');
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
     var ul = document.createElement('ul');
-    var s = r + 1;
     ul.innerHTML = '<li><img src= .' + myData[place].image + '></li><li>' + myData[place].name + '</li><li> Wins: ' + myData[place].wins + '</li><li>Losses: ' + myData[place].losses + '</li><li>Wins: ' + myData[place].score() + '%</li>';
     div.appendChild(ul);
   };
