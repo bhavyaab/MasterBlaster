@@ -7,31 +7,30 @@ var myData = [
     score: function() {
       return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
-    wins: 2,
-    losses: 2,
+    wins: 100,
+    losses: 0,
   },
   {
     userName: 'Michael',
     passWord: 'pwd',
     name: 'Michael Molinari',
+    image: './img/headshots/michael2.jpg',
     score: function() {
       return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 14,
     losses: 2,
-    image: './img/headshots/michael2.jpg',
   },
   {
     userName: 'Brian',
     passWord: 'pwd',
     name: 'Brian Nations',
     image: './img/headshots/brian.png',
-    name: 'Riley Rose',
     score: function() {
       return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
-    wins: 2,
-    losses: 1,
+    wins: 8,
+    losses: 4,
   },
   {
     userName: 'Craig',
@@ -42,7 +41,7 @@ var myData = [
       return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 2,
-    losses: 1,
+    losses: 6,
   },
   {
     userName: 'Brook',
@@ -52,8 +51,8 @@ var myData = [
     score: function() {
       return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
-    wins: 10,
-    losses: 3,
+    wins: 26,
+    losses: 12,
   },
   {
     userName: 'Munir',
@@ -64,7 +63,7 @@ var myData = [
       return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 12,
-    losses: 30,
+    losses: 60,
   },
   {
     userName: 'Will',
@@ -74,7 +73,40 @@ var myData = [
     score: function() {
       return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
-    wins: 1,
-    losses: 3,
+    wins: 26,
+    losses: 18,
+  },
+  {
+    userName: 'Maggie',
+    passWord: 'pwd',
+    name: 'Maggie Q',
+    image: './img/headshots/maggie.jpg',
+    score: function() {
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
+    },
+    wins: 36,
+    losses: 20,
+  },
+  {
+    userName: 'Randy',
+    passWord: 'pwd',
+    name: 'Randy Daytona',
+    image: './img/headshots/randy.jpg',
+    score: function() {
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
+    },
+    wins: 26,
+    losses: 14,
+  },
+  {
+    userName: 'Karl',
+    passWord: 'pwd',
+    name: 'Karl Wolfschtagg',
+    image: './img/headshots/karl.jpg',
+    score: function() {
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
+    },
+    wins: 26,
+    losses: 40,
   }
 ];
