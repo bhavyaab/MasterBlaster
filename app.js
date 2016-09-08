@@ -20,7 +20,7 @@ if(window.location.pathname.slice(-10) === 'index.html'){
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
     var ul = document.createElement('ul');
     var s = r + 1;
-    ul.innerHTML = '<li>' + s + '</li><li>' + myData[place].name + '</li> <li> Score: ' + myData[place].score() + '</li> <img src ="' + myData[place].image + '">' ;
+    ul.innerHTML = '<li>' + s + '</li><li>' + myData[place].name + '</li> <li> Win: ' + myData[place].score() + '%</li> <img src ="' + myData[place].image + '">' ;
     div.appendChild(ul);
   }
 }

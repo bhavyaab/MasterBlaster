@@ -5,7 +5,7 @@ var myData = [
     name: 'Jesus',
     image: './img/headshots/jesus.jpg',
     score: function() {
-      return this.wins * 100 / this.wins + this.losses;
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 2,
     losses: 2,
@@ -15,11 +15,11 @@ var myData = [
     passWord: 'pwd',
     name: 'Michael Molinari',
     score: function() {
-      return this.wins * 100 / this.wins + this.losses;
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 14,
     losses: 2,
-    image: './img/headshots/michael2.jpg'
+    image: './img/headshots/michael2.jpg',
   },
   {
     userName: 'Brian',
@@ -28,7 +28,7 @@ var myData = [
     image: './img/headshots/brian.png',
     name: 'Riley Rose',
     score: function() {
-      return this.wins * 100 / this.wins + this.losses;
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 2,
     losses: 1,
@@ -39,10 +39,10 @@ var myData = [
     name: 'Craig Campbell',
     image: './img/headshots/craig.jpg',
     score: function() {
-      return this.wins * 100 / this.wins + this.losses;
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 2,
-    losses: 0,
+    losses: 1,
   },
   {
     userName: 'Brook',
@@ -50,7 +50,7 @@ var myData = [
     name: 'Brook Riggio',
     image: './img/headshots/brook.png',
     score: function() {
-      return this.wins * 100 / this.wins + this.losses;
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 10,
     losses: 3,
@@ -61,7 +61,7 @@ var myData = [
     name: 'Munir Ibrahim',
     image: './img/headshots/munir.png',
     score: function() {
-      return this.wins * 100 / this.wins + this.losses;
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 12,
     losses: 30,
@@ -72,7 +72,7 @@ var myData = [
     name: 'Will Weatherford',
     image: './img/headshots/will.png',
     score: function() {
-      return this.wins * 100 / this.wins + this.losses;
+      return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
     wins: 1,
     losses: 3,
