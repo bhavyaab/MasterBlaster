@@ -28,7 +28,7 @@ function others(){
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
     var ul = document.createElement('ul');
     var s = r + 1;
-    ul.innerHTML = '<li>' + s + '</li><li>' + myData[place].name + '</li><li>Wins: ' + myData[place].score() + '%</li><li> Wins: ' + myData[place].wins + '</li><li>Losses: ' + myData[place].losses + '</li>';
+    ul.innerHTML = '<li>' + s + '</li><img src= .' + myData[place].image + '><li>' + myData[place].name + '</li><li> Wins: ' + myData[place].wins + '</li><li>Losses: ' + myData[place].losses + '</li><li>Wins: ' + myData[place].score() + '%</li>';
     div.appendChild(ul);
   };
 };
@@ -82,13 +82,11 @@ function winUpdate(event){
   var x = parseInt(prompt('win'));
   myData[j].wins = myData[j].wins + x;
   console.log('x = ', x,'win= ', myData[j].wins);
-  showInfo(j);
-};
-function lossUpdate(event){
-  event.preventDefault();
-  var x = parseInt(prompt('win'));
-  console.log('loss= ',x);
-
+  document.getElementById('win').innerText = 'wins: ' + myData[j].wins;
+  var x = parseInt(prompt('loss'));
+  myData[j].losses = myData[j].losses + x;
+  console.log('x = ', x,'loss= ', myData[j].losses);
+  document.getElementById('loss').innerText = 'losses: ' + myData[j].losses;
 }
 
 
