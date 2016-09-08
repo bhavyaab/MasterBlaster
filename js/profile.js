@@ -17,7 +17,7 @@ function showInfo(j) {
   ul.innerHTML = '<li>' + myData[j].name + '</li><li>Score: ' + myData[j].score() + '</li><li id="win"> Wins: ' + myData[j].wins + '</li><li id="loss">Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
   info.appendChild(img);
   info.appendChild(ul);
-  document.body.appendChild(info);
+  document.getElementById('blah').appendChild(info);
   return;
 };
 //others info
