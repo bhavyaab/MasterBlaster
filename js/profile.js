@@ -14,7 +14,7 @@ function showInfo(j) {
   img.setAttribute('src', '.' + myData[j].image);// append src to img tag
   var ul = document.createElement('ul');
   ul.setAttribute('class', 'info');
-  ul.innerHTML = '<li>' + myData[j].name + '</li><li>Wins: ' + myData[j].score() + '%</li><li id="win"> Wins: ' + myData[j].wins + '</li><li id="loss">Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
+  ul.innerHTML = '<li>' + myData[j].name + '</li><li id="win"> Wins: ' + myData[j].wins + '</li><li id="loss">Losses: ' + myData[j].losses + '<li id="score">Win: ' + myData[j].score() + '%</li></li><button id="update" type="submit">update</button>';
   info.appendChild(img);
   info.appendChild(ul);
   document.getElementById('blah').appendChild(info);
@@ -27,7 +27,7 @@ function others(){
     var div = document.getElementById('others');
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
     var ul = document.createElement('ul');
-    ul.innerHTML = '<li><img src= .' + myData[place].image + '></li><li>' + myData[place].name + '</li><li> Wins: ' + myData[place].wins + '</li><li>Losses: ' + myData[place].losses + '</li><li>Wins: ' + myData[place].score() + '%</li>';
+    ul.innerHTML = '<li><img src= .' + myData[place].image + '></li><li>' + myData[place].name + '</li><li> Wins: ' + myData[place].wins + '</li><li>Losses: ' + myData[place].losses + '</li><li>Win: ' + myData[place].score() + '%</li>';
     div.appendChild(ul);
   };
 };
@@ -73,23 +73,38 @@ function check(event){
 //update scores
 function updateScore(event){
   event.preventDefault();
-  prompt('hello');
-
+  winUpdate();
+  lossUpdate();
+  document.getElementById('score').innerText = 'wins: ' + myData[j].score() + '%';
 }
-function winUpdate(event){
+function winUpdate(){
   event.preventDefault();
   var x = parseInt(prompt('win'));
-  myData[j].wins = myData[j].wins + x;
-  console.log('x = ', x,'win= ', myData[j].wins);
-  myData[j].score();
-  document.getElementById('win').innerText = 'wins: ' + myData[j].wins;
-}
-function lossUpdate(event){
+  if(isNaN(x)){
+    alert('input is not a number');
+    return;
+  };
+  if(typeof x === 'number'){
+    myData[j].wins = myData[j].wins + x;
+    console.log('x = ', x,'win= ', myData[j].wins);
+    myData[j].score();
+    document.getElementById('win').innerText = 'wins: ' + myData[j].wins;
+  };
+};
+
+
+function lossUpdate(){
   event.preventDefault();
   var x = parseInt(prompt('loss'));
-  myData[j].losses = myData[j].losses + x;
-  console.log('x = ', x,'loss= ', myData[j].losses);
-  document.getElementById('loss').innerText = 'losses: ' + myData[j].losses;
+  if(isNaN(x)){
+    alert('input is not a number');
+    return;
+  };
+  if(typeof x === 'number'){
+    myData[j].losses = myData[j].losses + x;
+    console.log('x = ', x,'loss= ', myData[j].losses);
+    document.getElementById('loss').innerText = 'losses: ' + myData[j].losses;
+  };
 }
 
 
@@ -106,12 +121,4 @@ var update = document.getElementById('update');
 if(update){
   update.addEventListener('click', updateScore);
 }
-var addWin = document.getElementById('win');
-if(addWin){
-  addWin.addEventListener('click', winUpdate);
-};
-var addLoss = document.getElementById('loss');
-if(addLoss){
-  addLoss.addEventListener('click', lossUpdate);
-};
 document.getElementById('logOut').addEventListener('click', logOut);
