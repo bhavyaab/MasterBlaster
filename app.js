@@ -14,13 +14,13 @@ var ranking = scores.slice();
 ranking = ranking.sort(compareNumbers);
 //find the top three scorer
 //through DOM fetch div section
-if(window.location.pathname.slice[-10] === 'index.html'){
+if(window.location.pathname.slice(-10) === 'index.html'){
   for(var r = 0; r < 3; r++){
     var div = document.getElementById('rank');
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
     var ul = document.createElement('ul');
     var s = r + 1;
-    ul.innerHTML = '<li>' + s + '</li><li>' + myData[place].name + '</li> <li> Score: ' + myData[place].score() + '</li> <img src ="' + myData[place].image + '">' ;
+    ul.innerHTML = '<li>' + s + '</li><li>' + myData[place].name + '</li> <li> Win: ' + myData[place].score() + '%</li> <img src ="' + myData[place].image + '">' ;
     div.appendChild(ul);
   }
 }
