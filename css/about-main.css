@@ -51,6 +51,10 @@ main {
   position: absolute;
   left: 0;
   top: 0;
+  padding: 20px;
+  border: solid rgba(242,242,242,0.6) 10px;
+  width: 400px;
+  height: 340px;
 }
 
 .wwa_subheader {
@@ -92,7 +96,12 @@ main {
   position: absolute;
   right: 0;
   top: 0;
+  padding: 20px;
+  border: solid rgba(242,242,242,0.6) 10px;
+  width: 400px;
+  height: 340px;
 }
+
 
 .rules_subheader {
   position: absolute;
