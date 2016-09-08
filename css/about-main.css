@@ -51,6 +51,8 @@ main {
   position: absolute;
   left: 0;
   top: 0;
+  width: 460px;
+  height: 400px;
 }
 
 .wwa_subheader {
@@ -92,7 +94,10 @@ main {
   position: absolute;
   right: 0;
   top: 0;
+  width: 460px;
+  height: 400px;
 }
+
 
 .rules_subheader {
   position: absolute;
