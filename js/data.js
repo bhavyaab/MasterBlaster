@@ -62,7 +62,7 @@ var myData = [
     score: function() {
       return Math.floor(this.wins * 100 / (this.wins + this.losses));
     },
-    wins: 12,
+    wins: 0,
     losses: 60,
   },
   {

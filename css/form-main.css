@@ -2,14 +2,15 @@ main {
   width:960px;
   margin: 0 auto;
   margin-top: 20px;
-  background-color: rgb(48,48,48);
+  padding-bottom: 20px;
 }
 
 .hero {
   position: relative;
   width: 920px;
   height: 400px;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
   padding: 10px;
   border: solid rgba(242,242,242,0.6) 10px;
 }
@@ -30,11 +31,16 @@ main {
   text-align: center;
 }
 
+.lform {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  background-color: rgb(48,48,48);
+}
+
 form {
   width: 600px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: auto;
   border: solid rgb(190,144,100) 2px;
   background-color: rgb(68,68,68);
 }
