@@ -1,7 +1,5 @@
 main {
-  outline: dashed 2px orange;
   width: 960px;
-  height: 800px;
   margin: 0 auto;
   margin-top: 20px;
   background-color: rgb(68,68,68);
@@ -37,4 +35,75 @@ main {
   font-size: 100px;
   color: rgb(242,242,242);
   text-align: center;
+}
+
+/*////// TOP 10 //////*/
+#rank {
+  outline: dashed black 6px;
+  position: relative;
+  width: 960px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#rank ul:first-child {
+  outline: solid 2px red;
+  position: absolute;
+  top: 0;
+  width: 960px;
+}
+
+#rank ul:nth-child(2) {
+  outline: solid 2px red;
+  position: absolute;
+  top: 200px;
+  width: 960px;
+}
+
+#rank ul:nth-child(3) {
+  outline: solid 2px red;
+  position: absolute;
+  top: 400px;
+  width: 960px;
+}
+
+#rank ul li:first-child {
+  outline: dashed white 2px;
+  display: inline-block;
+  width: 60px;
+  padding: 10px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  color: rgb(242,242,242);
+  text-align: center;
+}
+
+#rank ul li:nth-child(2) {
+  outline: dashed green 2px;
+  display: inline-block;
+  width: 240px;
+  padding: 10px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 30px;
+  color: rgb(242,242,242);
+  text-align: left;
+}
+
+#rank ul li:nth-child(3) {
+  outline: dashed orange 2px;
+  display: inline-block;
+  width: 200;
+  padding: 10px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 30px;
+  color: rgb(242,242,242);
+  text-align: center;
+}
+
+#rank img {
+  outline: dashed 2px purple;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
