@@ -70,17 +70,23 @@
     <h1>PROFILES</h1>
   </section>
 
-  <form id="login_form">
-    <fieldset>
-      <label for="userName">User Name</label>
-      <input type="text" name="userName" placeholder="User Name" required>
-     </fieldset>
-     <fieldset>
-       <label for="passWord">password </label>
-       <input type="password" name="passWord" placeholder="Password" required>
-     </fieldset>
-     <button id="btn" type="submit">Confirm + </button>
-   </form>
+  <section class="login">
+    <form id="login_form">
+      <fieldset>
+        <label for="userName">User Name: </label>
+        <input type="text" name="userName" placeholder="User Name" required>
+       </fieldset>
+
+       <fieldset>
+         <label for="passWord">Password: </label>
+         <input type="password" name="passWord" placeholder="Password" required>
+       </fieldset>
+
+       <div class="button">
+         <button id="btn" type="submit">Log In</button>
+       </div>
+     </form>
+   </section>
 
   <form id="info"></form>
   <div id="others"></div>

@@ -5,7 +5,7 @@ main {
   background-color: rgb(68,68,68);
 }
 
-/*//////////// HERO ////////////*/
+/*// HERO //*/
 .hero {
   position: relative;
   width: 920px;
@@ -31,11 +31,22 @@ main {
   text-align: center;
 }
 
-#login_form {
-  outline: dashed 2px red;
+/*// LOG IN //*/
+.login {
+  position: relative;
   width: 960px;
-  height: 400px;
+  height: 260px;
   margin: 0 auto;
+  margin-top: 20px;
+  background-color: rgb(48,48,48);
+}
+
+#login_form {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 200px);
+  width: 400px;
+  border: solid rgb(190,144,100) 2px;
 }
 
 #login_form fieldset {
@@ -57,9 +68,15 @@ main {
   outline: solid rgb(210,16,26) 2px;
 }
 
+.button {
+  width: 120px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
 #login_form button {
   font-family: 'Permanent Marker', cursive;
-  font-size: 40px;
+  font-size: 28px;
   margin: auto;
   color: white;
   background-color: rgb(48,48,48);
@@ -71,50 +88,93 @@ main {
 #login_form button:hover {
   background-color: rgb(210,16,26);
 }
+/*// INFO //*/
+#info {
+  outline: dashed white 2px;
+  position: relative;
+  width: 960px;
+  height: 250px;
+  margin: 0 auto;
+}
 
+#info img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
+#info ul {
+  outline: dashed orange 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+}
 
+#info ul li {
+  outline: dashed green 2px;
+  display: inline-block;
+  padding: 30px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: rgb(242,242,242);
+}
 
-/*#logIn{
-     width: 960px;
-     display: block;
-     text-align: center;
+/*// OTHERS //*/
+#others {
+  outline: dashed green 2px;
+  position: relative;
+  width: 960px;
+  height: 600px;
 }
-fieldset{
-     padding: 10px;
-     font-size: 20px;
+
+#others ul:first-child {
+  outline: dashed gold 2px;
+  position: absolute;
+  top: 0;
+  width: 960px;
 }
-input{
-     padding: 5px;
-     font-size: 20px;
+
+#others ul:nth-child(2) {
+  outline: dashed gold 2px;
+  position: absolute;
+  top: 100px;
+  width: 960px;
 }
-#logIn button{
-     padding: 10px 30px;
-     font-size: 20px;
-     cursor: pointer;
+
+#others ul:nth-child(3) {
+  outline: dashed gold 2px;
+  position: absolute;
+  top: 200px;
+  width: 960px;
 }
-.pic{
-     padding: 20px;
+
+#others ul:nth-child(4) {
+  outline: dashed gold 2px;
+  position: absolute;
+  top: 300px;
+  width: 960px;
 }
-.name{
-     display: inline-block;
-     vertical-align: top;
-     font-size: 35px;
-     font-weight: bold;
-     align-self: center;
-     margin-top: 10px;
-     outline: dashed 2px blue;
+
+#others ul:nth-child(5) {
+  outline: dashed gold 2px;
+  position: absolute;
+  top: 400px;
+  width: 960px;
 }
-.info{
-     outline: dashed 2px orange;
-     display: inline-block;
-     vertical-align: top;
-     font-family: 'Droid Sans';
-     font-size: 30px;
-     margin-top: 25px;
-     width: 600px;
-     padding: 20px;
+
+#others ul:nth-child(6) {
+  outline: dashed gold 2px;
+  position: absolute;
+  top: 500px;
+  width: 960px;
 }
-button{
-     /* align button */
-}*/
+
+#others ul li {
+  outline: dashed pink 2px;
+  display: inline-block;
+  padding: 20px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: rgb(242,242,242);
+}
