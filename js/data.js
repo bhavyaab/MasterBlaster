@@ -3,35 +3,43 @@ var myData = [
     userName: 'BrianN',
     passWord: 'pwd',
     name: 'Brian Nations',
-    score: 122,
+    score: function() {
+      return this.wins * 100 / this.wins + this.losses;
+    },
     wins: 2,
-    losses: 3,
+    losses: 2,
     image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'RileyR',
     passWord: 'pwd',
     name: 'Riley Rose',
-    score: 222,
+    score: function() {
+      return this.wins * 100 / this.wins + this.losses;
+    },
     wins: 2,
-    losses: 3,
+    losses: 1,
     image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'BileyR',
     passWord: 'pwd',
     name: 'Biley Rose',
-    score: 321,
+    score: function() {
+      return this.wins * 100 / this.wins + this.losses;
+    },
     wins: 2,
-    losses: 3,
+    losses: 0,
     image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'Ramank',
     passWord: 'pwd',
     name: 'Raman Kumar',
-    score: 123,
-    wins: 2,
+    score: function() {
+      return this.wins * 100 / this.wins + this.losses;
+    },
+    wins: 10,
     losses: 3,
     image: 'http://placehold.it/230x230/000000'
   },
@@ -39,17 +47,21 @@ var myData = [
     userName: 'Erin',
     passWord: 'pwd',
     name: 'Erin Lee',
-    score: 112,
-    wins: 2,
-    losses: 3,
+    score: function() {
+      return this.wins * 100 / this.wins + this.losses;
+    },
+    wins: 12,
+    losses: 30,
     image: 'http://placehold.it/230x230/000000'
   },
   {
     userName: 'Bhavyab',
     passWord: 'pwd',
     name: 'Bhavya Bharti',
-    score: 122,
-    wins: 2,
+    score: function() {
+      return this.wins * 100 / this.wins + this.losses;
+    },
+    wins: 1,
     losses: 3,
     image: 'http://placehold.it/230x230/000000'
   }

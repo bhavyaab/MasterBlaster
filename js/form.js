@@ -5,7 +5,7 @@ function Person(username, password, name){
   this.name = name;
   this.wins = 0;
   this.losses = 0;
-  this.score = 0;
+  this.score()();
   this.image = 'http://placehold.it/230x230/000000';
 };
 var data = []; //data of all people.
