@@ -43,10 +43,10 @@ main {
 
 #login_form {
   position: absolute;
-  top: 20px;
-  left: calc(50% - 200px);
+  top: 40px;
+  left: calc(50% - 205px);
   width: 400px;
-  border: solid rgb(190,144,100) 2px;
+  border: solid rgb(190,144,100) 10px;
 }
 
 #login_form fieldset {
@@ -144,19 +144,46 @@ main {
   background-color: rgb(210,16,26);
 }
 
+button#logOut {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 14px;
+  margin-top: 250px;
+  margin-left: 5px;
+  color: white;
+  background-color: rgb(48,48,48);
+  border-radius: 30%;
+  padding: 10px;
+  transition: 500ms all;
+}
+
+button#logOut:hover {
+  background-color: rgb(210,16,26);
+}
+
+
+/*// IMPROVE RANK //*/
+h5 {
+  width: 860px;
+  margin: auto;
+  margin-bottom: 5px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 24px;
+  color: rgb(210,16,26);
+  text-align: center;
+}
+
 /*////// OTHERS //////*/
 #others {
   width: 860px;
   height: 400px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 40px;
   border: solid rgb(242,242,242) 10px;
   overflow: scroll;
 }
 
 #others ul {
-  outline: solid red 2px;
   display: block;
   width: 820px;
   margin-top: 20px;
@@ -169,37 +196,66 @@ main {
 
 /*// NUMBER LI //*/
 #others ul li:first-child {
+  margin: 0 10px 0 0;
 }
 
 /*// NAME LI //*/
 #others ul li:nth-child(2) {
-  width: 400px;
-  margin: 15px 20px 0 0;
-  padding: 20px;
+  width: 280px;
+  margin: 10px 10px 0 0;
+  padding: 15px;
   background-color: rgba(242,242,242,0.6);
   border-radius: 20px;
   font-family: 'Droid Sans', sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   color: rgb(48,48,48);
   text-align: left;
 }
 
 /*// WINS //*/
 #others ul li:nth-child(3) {
-  width: 200px;
-  margin: 15px 20px 0 0;
-  padding: 20px 10px 20px 10px;
+  width: 100px;
+  margin: 10px 10px 0 0;
+  padding: 16px 10px 16px 10px;
   background-color: rgba(242,242,242,0.6);
   border-radius: 20px;
   font-family: 'Droid Sans', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(48,48,48);
   text-align: center;
 }
 
+/*// LOSSES //*/
+#others ul li:nth-child(4) {
+  width: 100px;
+  margin: 10px 10px 0 0;
+  padding: 16px 10px 16px 10px;
+  background-color: rgba(242,242,242,0.6);
+  border-radius: 20px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: rgb(48,48,48);
+  text-align: center;
+}
+
+/*// WIN % //*/
+#others ul li:nth-child(5) {
+  width: 120px;
+  margin: 10px 10px 0 0;
+  padding: 16px 10px 16px 10px;
+  background-color: rgba(242,242,242,0.6);
+  border-radius: 20px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: rgb(48,48,48);
+  text-align: center;
+}
+
+
+
 /*// IMG //*/
 #others img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 10px;
 }
