@@ -23,13 +23,14 @@ function showInfo(j) {
 //others info
 function others(){
   var z = ranking.length - 1;
+  var div = document.getElementById('others');
   for(var r = z; r > -1; r--){
-    var div = document.getElementById('others');
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
     var ul = document.createElement('ul');
     ul.innerHTML = '<li><img src= .' + myData[place].image + '></li><li>' + myData[place].name + '</li><li> Wins: ' + myData[place].wins + '</li><li>Losses: ' + myData[place].losses + '</li><li>Wins: ' + myData[place].score() + '%</li>';
     div.appendChild(ul);
   };
+  div.style.display = 'block';
 };
 //page load save info
 //check if local storage have list of privious
