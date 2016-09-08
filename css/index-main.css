@@ -47,17 +47,20 @@ main {
   margin-top: 40px;
 }
 
+div#rank ul li {
+  display: block;
+  float: left;
+}
+
 /*// #1 //*/
 #rank ul:first-child {
-  outline: solid 2px red;
   position: absolute;
   top: 0;
-  width: 960px;
+  left: calc(50% - 353px);
+  width: 706px;
 }
 
 #rank ul:first-child li:first-child {
-  outline: dashed white 2px;
-  display: inline-block;
   width: 60px;
   padding: 10px;
   background-color: rgb(190,140,50);
@@ -71,15 +74,13 @@ main {
 
 /*// #2 //*/
 #rank ul:nth-child(2) {
-  outline: solid 2px red;
   position: absolute;
-  top: 200px;
-  width: 960px;
+  top: 120px;
+  left: calc(50% - 353px);
+  width: 706px;
 }
 
 #rank ul:nth-child(2) li:first-child {
-  outline: dashed white 2px;
-  display: inline-block;
   width: 60px;
   padding: 10px;
   background-color: rgb(160,160,160);
@@ -93,15 +94,13 @@ main {
 
 /*// #3 //*/
 #rank ul:nth-child(3) {
-  outline: solid 2px red;
   position: absolute;
-  top: 400px;
-  width: 960px;
+  top: 240px;
+  left: calc(50% - 353px);
+  width: 706px;
 }
 
 #rank ul:nth-child(3) li:first-child {
-  outline: dashed white 2px;
-  display: inline-block;
   width: 60px;
   padding: 10px;
   background-color: rgb(160,86,42);
@@ -112,11 +111,13 @@ main {
   text-align: center;
 }
 
-
+/*// NUMBER LI //*/
+#rank ul li:first-child {
+  margin: 20px 20px 20px 0;
+}
 /*// NAME LI //*/
 #rank ul li:nth-child(2) {
-  outline: dashed green 2px;
-  display: inline-block;
+  margin: 25px 20px 25px 0;
   width: 240px;
   padding: 20px;
   background-color: rgba(242,242,242,0.6);
@@ -129,20 +130,20 @@ main {
 
 /*// SCORE LI //*/
 #rank ul li:nth-child(3) {
-  outline: dashed orange 2px;
-  display: inline-block;
+  margin: 25px 20px 25px 0;
   width: 200;
-  padding: 10px;
+  padding: 20px;
+  background-color: rgba(242,242,242,0.6);
+  border-radius: 20px;
   font-family: 'Droid Sans', sans-serif;
   font-size: 30px;
-  color: rgb(242,242,242);
+  color: rgb(48,48,48);
   text-align: center;
 }
 
 /*// IMG //*/
 #rank img {
-  outline: dashed 2px purple;
-  display: inline-block;
+  margin: 10px 0 10px 0;
   width: 100px;
   height: 100px;
   border-radius: 10px;
