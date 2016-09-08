@@ -40,24 +40,39 @@ main {
 /*////// TOP 10 //////*/
 #rank {
   outline: dashed black 6px;
+  position: relative;
   width: 960px;
   height: 600px;
   margin: 0 auto;
   margin-top: 40px;
 }
 
-#rank ul {
+#rank ul:first-child {
   outline: solid 2px red;
-  width: 700px;
-  padding: 10px;
-  margin: 20px 80px 20px 60px;
+  position: absolute;
+  top: 0;
+  width: 960px;
+}
+
+#rank ul:nth-child(2) {
+  outline: solid 2px red;
+  position: absolute;
+  top: 200px;
+  width: 960px;
+}
+
+#rank ul:nth-child(3) {
+  outline: solid 2px red;
+  position: absolute;
+  top: 400px;
+  width: 960px;
 }
 
 #rank ul li:first-child {
+  outline: dashed white 2px;
   display: inline-block;
   width: 60px;
   padding: 10px;
-  border: solid white 2px;
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
   color: rgb(242,242,242);
@@ -65,23 +80,30 @@ main {
 }
 
 #rank ul li:nth-child(2) {
+  outline: dashed green 2px;
   display: inline-block;
-  width: 400px;
+  width: 240px;
   padding: 10px;
-  border: solid red 2px;
   font-family: 'Droid Sans', sans-serif;
   font-size: 30px;
   color: rgb(242,242,242);
   text-align: left;
 }
 
-#rank ul li:last-child {
+#rank ul li:nth-child(3) {
+  outline: dashed orange 2px;
   display: inline-block;
   width: 200;
   padding: 10px;
-  border: solid orange 2px;
   font-family: 'Droid Sans', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color: rgb(242,242,242);
   text-align: center;
+}
+
+#rank img {
+  outline: dashed 2px purple;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
