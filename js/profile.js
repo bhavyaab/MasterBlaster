@@ -14,10 +14,10 @@ function showInfo(j) {
   img.setAttribute('src', '.' + myData[j].image);// append src to img tag
   var ul = document.createElement('ul');
   ul.setAttribute('class', 'info');
-  ul.innerHTML = '<li>' + myData[j].name + '</li><li>Score: ' + myData[j].score() + '</li><li id="win"> Wins: ' + myData[j].wins + '</li><li id="loss">Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
+  ul.innerHTML = '<li>' + myData[j].name + '</li><li>Wins: ' + myData[j].score() + '%</li><li id="win"> Wins: ' + myData[j].wins + '</li><li id="loss">Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
   info.appendChild(img);
   info.appendChild(ul);
-  document.body.appendChild(info);
+  document.getElementById('blah').appendChild(info);
   return;
 };
 //others info
@@ -28,7 +28,7 @@ function others(){
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
     var ul = document.createElement('ul');
     var s = r + 1;
-    ul.innerHTML = '<li>' + s + '</li><li>' + myData[place].name + '</li><li> Score: ' + myData[place].score() + '</li>';
+    ul.innerHTML = '<li>' + s + '</li><li>' + myData[place].name + '</li><li>Wins: ' + myData[place].score() + '%</li><li> Wins: ' + myData[place].wins + '</li><li>Losses: ' + myData[place].losses + '</li>';
     div.appendChild(ul);
   };
 };
@@ -58,6 +58,7 @@ function check(event){
     if(username === myData[i].userName && password === myData[i].passWord){
       localStorage.signIn = username;
       var j = i;
+      location.reload();
     };
   }
   showInfo(j);
@@ -68,7 +69,7 @@ function check(event){
     info.style.display = 'none';
     alert('username or password is worng!!');
   };
-  return localStorage.signIn;
+  return j;
 };
 //update scores
 function updateScore(event){
@@ -79,9 +80,9 @@ function updateScore(event){
 function winUpdate(event){
   event.preventDefault();
   var x = parseInt(prompt('win'));
-  // x = +myData[].wins;
-  console.log('win= ',x);
-
+  myData[j].wins = myData[j].wins + x;
+  console.log('x = ', x,'win= ', myData[j].wins);
+  showInfo(j);
 };
 function lossUpdate(event){
   event.preventDefault();
