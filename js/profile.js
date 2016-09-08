@@ -1,9 +1,13 @@
 //make profile info hide and signIn block display
 var signIn = document.getElementById('login_form');
 var info = document.getElementById('info');
+var up = document.getElementById('up');
 signIn.style.display = 'block';
 info.style.display = 'none';
-var setFlag
+var setFlag = false; // hiding the update page
+if(setFlag = false){
+  up.style.display = 'none';
+};
 //declear function to show up info
 function showInfo(j) {
   signIn.style.display = 'none';
@@ -13,12 +17,7 @@ function showInfo(j) {
   img.setAttribute('src', myData[j].image);// append src to img tag
   var ul = document.createElement('ul');
   ul.setAttribute('class', 'info');
-  var myName = document.createElement('li');
-  myName.innerHTML = myData[j].name;
-  var myInfo = document.createElement('ul');
-  myInfo.innerHTML = '<li>Score: ' + myData[j].score + '</li><li> Wins: ' + myData[j].wins + '</li><li>Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
-  ul.appendChild(myName);
-  ul.appendChild(myInfo);
+  ul.innerHTML = '<li>' + myData[j].name + '</li><li>Score: ' + myData[j].score + '</li><li> Wins: ' + myData[j].wins + '</li><li>Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
   info.appendChild(img);
   info.appendChild(ul);
   document.body.appendChild(info);
@@ -74,11 +73,13 @@ function check(event){
 };
 //update scores
 function updateScore(event){
+  setFlag = true;
   event.preventDefault();
-  var info = document.getElementById('info');
+  up.style.display = 'block';
 
 }
 
+
 //infoPage(3);
 document.getElementById('login_form').addEventListener('submit', check);
-document.getElementById('update').addEventListener('submit', updateScore);
+document.getElementById('update').addEventListener('click', updateScore);
