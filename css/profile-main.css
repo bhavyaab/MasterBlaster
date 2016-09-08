@@ -35,7 +35,7 @@ main {
 .login {
   position: relative;
   width: 960px;
-  height: 260px;
+  height: 300px;
   margin: 0 auto;
   margin-top: 20px;
   background-color: rgb(48,48,48);
@@ -90,7 +90,6 @@ main {
 }
 /*// INFO //*/
 #info {
-  outline: dashed white 6px;
   position: relative;
   width: 960px;
   height: 280px;
@@ -99,7 +98,7 @@ main {
 
 #info img {
   position: absolute;
-  left: 20px;
+  left: 40px;
   top: 20px;
   width: 260px;
   height: 260px;
