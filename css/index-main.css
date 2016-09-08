@@ -40,14 +40,19 @@ main {
 /*////// TOP 10 //////*/
 #rank {
   outline: dashed black 6px;
-  position: relative;
   width: 960px;
   height: 600px;
   margin: 0 auto;
   margin-top: 40px;
 }
 
-div#rank ul li {
+/*#rank ul {
+  outline: solid red 2px;
+  display: block;
+  width: 960px;
+}*/
+
+#rank ul li {
   display: block;
   float: left;
 }
