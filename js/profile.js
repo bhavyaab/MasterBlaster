@@ -4,20 +4,17 @@ var info = document.getElementById('info');
 var up = document.getElementById('up');
 signIn.style.display = 'block';
 info.style.display = 'none';
-var setFlag = false; // hiding the update page
-if(setFlag = false){
-  up.style.display = 'none';
-};
+up.style.display = 'none' // hiding the update page
 //declear function to show up info
 function showInfo(j) {
   signIn.style.display = 'none';
   info.style.display = 'block';
   var img = document.createElement('img');
   img.setAttribute('class', 'pic');//create image element
-  img.setAttribute('src', myData[j].image);// append src to img tag
+  img.setAttribute('src', '.' + myData[j].image);// append src to img tag
   var ul = document.createElement('ul');
   ul.setAttribute('class', 'info');
-  ul.innerHTML = '<li>' + myData[j].name + '</li><li>Score: ' + myData[j].score() + '</li><li> Wins: ' + myData[j].wins + '</li><li>Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
+  ul.innerHTML = '<li>' + myData[j].name + '</li><li>Score: ' + myData[j].score() + '</li><li id="win"> Wins: ' + myData[j].wins + '</li><li id="loss">Losses: ' + myData[j].losses + '</li><button id="update" type="submit">update</button>';
   info.appendChild(img);
   info.appendChild(ul);
   document.body.appendChild(info);
@@ -43,6 +40,9 @@ if(localStorage.signIn){
       var j = i;
       showInfo(j);
       others();
+      localStorage.wins = myData[i].wins;
+      localStorage.losses = myData[i].losses;
+
     };
   }
 }
@@ -68,21 +68,29 @@ function check(event){
     info.style.display = 'none';
     alert('username or password is worng!!');
   };
-  return setFlag;
+  return localStorage.signIn;
 };
 //update scores
 function updateScore(event){
-  setFlag = true;
   event.preventDefault();
-  up.style.display = 'block';
+  prompt('hello');
+
+}
+function winUpdate(event){
+  event.preventDefault();
+  var x = parseInt(prompt('win'));
+  // x = +myData[].wins;
+  console.log('win= ',x);
+
+};
+function lossUpdate(event){
+  event.preventDefault();
+  var x = parseInt(prompt('win'));
+  console.log('loss= ',x);
 
 }
 
-if(setFlag === true){
-  up.style.display = 'block';
-}else {
-  up.style.display = 'none';
-}
+
 //logout feature
 function logOut(event){
   event.preventDefault();
@@ -96,4 +104,12 @@ var update = document.getElementById('update');
 if(update){
   update.addEventListener('click', updateScore);
 }
+var addWin = document.getElementById('win');
+if(addWin){
+  addWin.addEventListener('click', winUpdate);
+};
+var addLoss = document.getElementById('loss');
+if(addLoss){
+  addLoss.addEventListener('click', lossUpdate);
+};
 document.getElementById('logOut').addEventListener('click', logOut);
