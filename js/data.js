@@ -1,56 +1,65 @@
 var myData = [
   {
-    userName: 'BrianN',
+    userName: 'Jesus',
+    passWord: 'pwd',
+    name: 'Jesus',
+    score: 200,
+    wins: 1000000,
+    losses: 0,
+    image: '../img/headshots/jesus.jpg'
+  },
+  {
+    userName: 'Michael',
+    passWord: 'pwd',
+    name: 'Michael Molinari',
+    score: 180,
+    wins: 14,
+    losses: 2,
+    image: '../img/headshots/michael2.jpg'
+  },
+  {
+    userName: 'Brian',
     passWord: 'pwd',
     name: 'Brian Nations',
-    score: 122,
-    wins: 2,
-    losses: 3,
-    image: 'http://placehold.it/230x230/000000'
+    score: 140,
+    wins: 10,
+    losses: 1,
+    image: '../img/headshots/brian.png'
   },
   {
-    userName: 'RileyR',
+    userName: 'Craig',
     passWord: 'pwd',
-    name: 'Riley Rose',
-    score: 222,
-    wins: 2,
-    losses: 3,
-    image: 'http://placehold.it/230x230/000000'
+    name: 'Craig Campbell',
+    score: 110,
+    wins: 8,
+    losses: 8,
+    image: '../img/headshots/craig.jpg'
   },
   {
-    userName: 'BileyR',
+    userName: 'Brook',
     passWord: 'pwd',
-    name: 'Biley Rose',
-    score: 321,
-    wins: 2,
-    losses: 3,
-    image: 'http://placehold.it/230x230/000000'
+    name: 'Brook Riggio',
+    score: 160,
+    wins: 32,
+    losses: 4,
+    image: '../img/headshots/brook.png'
   },
   {
-    userName: 'Ramank',
+    userName: 'Munir',
     passWord: 'pwd',
-    name: 'Raman Kumar',
-    score: 123,
-    wins: 2,
-    losses: 3,
-    image: 'http://placehold.it/230x230/000000'
+    name: 'Munir Ibrahim',
+    score: 100,
+    wins: 26,
+    losses: 8,
+    image: '../img/headshots/munir.png'
   },
   {
-    userName: 'Erin',
+    userName: 'Will',
     passWord: 'pwd',
-    name: 'Erin Lee',
-    score: 112,
-    wins: 2,
-    losses: 3,
-    image: 'http://placehold.it/230x230/000000'
-  },
-  {
-    userName: 'Bhavyab',
-    passWord: 'pwd',
-    name: 'Bhavya Bharti',
-    score: 122,
-    wins: 2,
-    losses: 3,
-    image: 'http://placehold.it/230x230/000000'
+    name: 'Will Weatherford',
+    score: 150,
+    wins: 18,
+    losses: 10,
+    image: '../img/headshots/will.png'
   }
 ];
