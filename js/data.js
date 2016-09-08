@@ -3,7 +3,7 @@ var myData = [
     userName: 'Jesus',
     passWord: 'pwd',
     name: 'Jesus',
-    image: '../img/headshots/jesus.jpg',
+    image: './img/headshots/jesus.jpg',
     score: function() {
       return this.wins * 100 / this.wins + this.losses;
     },
@@ -19,13 +19,13 @@ var myData = [
     },
     wins: 14,
     losses: 2,
-    image: '../img/headshots/michael2.jpg'
+    image: './img/headshots/michael2.jpg'
   },
   {
     userName: 'Brian',
     passWord: 'pwd',
     name: 'Brian Nations',
-    image: '../img/headshots/brian.png',
+    image: './img/headshots/brian.png',
     name: 'Riley Rose',
     score: function() {
       return this.wins * 100 / this.wins + this.losses;
@@ -37,7 +37,7 @@ var myData = [
     userName: 'Craig',
     passWord: 'pwd',
     name: 'Craig Campbell',
-    image: '../img/headshots/craig.jpg',
+    image: './img/headshots/craig.jpg',
     score: function() {
       return this.wins * 100 / this.wins + this.losses;
     },
@@ -48,7 +48,7 @@ var myData = [
     userName: 'Brook',
     passWord: 'pwd',
     name: 'Brook Riggio',
-    image: '../img/headshots/brook.png',
+    image: './img/headshots/brook.png',
     score: function() {
       return this.wins * 100 / this.wins + this.losses;
     },
@@ -59,7 +59,7 @@ var myData = [
     userName: 'Munir',
     passWord: 'pwd',
     name: 'Munir Ibrahim',
-    image: '../img/headshots/munir.png',
+    image: './img/headshots/munir.png',
     score: function() {
       return this.wins * 100 / this.wins + this.losses;
     },
@@ -70,7 +70,7 @@ var myData = [
     userName: 'Will',
     passWord: 'pwd',
     name: 'Will Weatherford',
-    image: '../img/headshots/will.png',
+    image: './img/headshots/will.png',
     score: function() {
       return this.wins * 100 / this.wins + this.losses;
     },

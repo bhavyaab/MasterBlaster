@@ -14,7 +14,7 @@ var ranking = scores.slice();
 ranking = ranking.sort(compareNumbers);
 //find the top three scorer
 //through DOM fetch div section
-if(window.location.pathname.slice[-10] === 'index.html'){
+if(window.location.pathname.slice(-10) === 'index.html'){
   for(var r = 0; r < 3; r++){
     var div = document.getElementById('rank');
     var place = scores.indexOf(ranking[ranking.length - r - 1]);
