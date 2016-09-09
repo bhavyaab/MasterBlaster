@@ -139,6 +139,22 @@ main {
   text-align: left;
 }
 
+/*////////// VIDEO //////////*/
+.video {
+  position: relative;
+  width: 960px;
+  height: 315px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 280px);
+  border: solid rgb(242,242,242) 10px;
+}
+
 /*////////// FOUNDERS //////////*/
 .founders {
   position: relative;
