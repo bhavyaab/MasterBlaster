@@ -12,111 +12,113 @@
 
   <body>
 <!-- //////////////////// HEADER //////////////////// -->
-<header>
-  <div class="outer">
-    <!-- // LOGO // -->
-    <div class="logo">
-      <img src="../img/pflogo.png">
-      <h1>Ping Fellows</h1>
+  <header>
+    <div class="outer">
+      <!-- // LOGO // -->
+      <div class="logo">
+        <img src="../img/pflogo.png">
+        <h1>Ping Fellows</h1>
+      </div>
+      <!-- // NAVIGATION // -->
+      <nav>
+        <ul>
+
+          <li class="nav_other">
+            <a href="../index.html">
+              <h4>HOME</h4>
+              <img src="../img/homeicon.png" class="icon">
+              <div class="div_other"></div>
+            </a>
+          </li>
+
+          <li class="nav_other">
+            <a href="about.html">
+              <h4>ABOUT</h4>
+              <img src="../img/abouticon.png" class="icon">
+              <div class="div_other"></div>
+            </a>
+          </li>
+
+          <li class="nav_current">
+            <a href="profile.html">
+              <h4>PROFILES</h4>
+              <img src="../img/profileicon.png" class="icon">
+              <div class="div_current"></div>
+            </a>
+          </li>
+
+          <li class="nav_other">
+            <a href="form.html">
+              <h4>SIGN-UP</h4>
+              <img src="../img/paddleicon.png" class="icon">
+              <div class="div_other"></div>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
     </div>
-    <!-- // NAVIGATION // -->
-    <nav>
-      <ul>
-
-        <li class="nav_other">
-          <a href="../index.html">
-            <h4>HOME</h4>
-            <img src="../img/homeicon.png" class="icon">
-            <div class="div_other"></div>
-          </a>
-        </li>
-
-        <li class="nav_other">
-          <a href="about.html">
-            <h4>ABOUT</h4>
-            <img src="../img/abouticon.png" class="icon">
-            <div class="div_other"></div>
-          </a>
-        </li>
-
-        <li class="nav_current">
-          <a href="profile.html">
-            <h4>PROFILES</h4>
-            <img src="../img/profileicon.png" class="icon">
-            <div class="div_current"></div>
-          </a>
-        </li>
-
-        <li class="nav_other">
-          <a href="form.html">
-            <h4>SIGN-UP</h4>
-            <img src="../img/paddleicon.png" class="icon">
-            <div class="div_other"></div>
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
 
 <!-- //////////////////// MAIN //////////////////// -->
-<main>
+  <main>
 
-<!-- //////////////////// HERO //////////////////// -->
-  <section class="hero">
-    <img src="../img/hero1.jpg" class="bhero">
-    <h1>PROFILES</h1>
-  </section>
+    <!-- // HERO // -->
+    <section class="hero">
+      <img src="../img/hero1.jpg" class="bhero">
+      <h1>PROFILES</h1>
+    </section>
 
-  <section class="login" id="blah">
-    <form id="login_form">
-      <fieldset>
-        <label for="userName">User Name: </label>
-        <input type="text" name="userName" placeholder="User Name" required>
-       </fieldset>
+    <section class="login" id="blah">
+      <form id="login_form">
+        <fieldset>
+          <label for="userName">User Name: </label>
+          <input type="text" name="userName" placeholder="User Name" required>
+         </fieldset>
 
-       <fieldset>
-         <label for="passWord">Password: </label>
-         <input type="password" name="passWord" placeholder="Password" required>
-       </fieldset>
+         <fieldset>
+           <label for="passWord">Password: </label>
+           <input type="password" name="passWord" placeholder="Password" required>
+         </fieldset>
 
-       <div class="button">
-         <button id="btn" type="submit">Log In</button>
+         <div class="button">
+           <button id="btn" type="submit">Log In</button>
+         </div>
+       </form>
+     </section>
+
+   <form id="info">
+        <div id="up">
+         <!-- <fieldset>
+           <label for="wins" id="win">Wins</label>
+           <input type="number" name="wins" min="0" max="10">
+         </fieldset>
+         <fieldset>
+           <label for="losses" id="loss">Losses</label>
+           <input type="number" name="losses" min="0" max="100">
+         </fieldset> -->
        </div>
-     </form>
-   </section>
+       <button id="logOut">Log Out</button>
+   </form>
 
- <form id="info">
-      <div id="up">
-       <!-- <fieldset>
-         <label for="wins" id="win">Wins</label>
-         <input type="number" name="wins" min="0" max="10">
-       </fieldset>
-       <fieldset>
-         <label for="losses" id="loss">Losses</label>
-         <input type="number" name="losses" min="0" max="100">
-       </fieldset> -->
-     </div>
-     <button id="logOut">Log Out</button>
- </form>
-
-  <div id="others">
-    <h5>TO IMPROVE YOUR RANK... PLAY THE MEMBERS AT THE TOP OF THIS LIST</h5>
-  </div>
-
-</main>
-<!-- //////////////////// FOOTER //////////////////// -->
-<footer>
-  <div class="div_footer">
-    <div class="email">
-      <img src="../img/emailicon.png" class="emailicon">
-      <h4 class="footer_email">contact@pingfellows.org</h4>
+    <div id="others">
+      <h5>TO IMPROVE YOUR RANK... PLAY THE MEMBERS AT THE TOP OF THIS LIST</h5>
     </div>
-    <h4 class="footer_copyright">	&copy; 2016 Ping Fellows, Inc</h4>
-    <a href="http://www.codefellows.org" class="codefellows"><img src="../img/codefellows.png" class="cflogo"></a>
-  </div>
-</footer>
+
+  </main>
+
+  <!-- //////////////////// FOOTER //////////////////// -->
+  <footer>
+    <div class="div_footer">
+      <div class="email">
+        <img src="../img/emailicon.png" class="emailicon">
+        <h4 class="footer_email">contact@pingfellows.org</h4>
+      </div>
+      <h4 class="footer_copyright">	&copy; 2016 Ping Fellows, Inc</h4>
+      <a href="http://www.codefellows.org" class="codefellows"><img src="../img/codefellows.png" class="cflogo"></a>
+    </div>
+  </footer>
+
     <script src="../js/data.js"></script>
     <script src="../app.js"></script>
     <script src="../js/profile.js"></script>
