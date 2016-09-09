@@ -13,17 +13,23 @@ if(up){
 }
 //declear function to show up info
 function showInfo(j) {
-  signIn.style.display = 'none';
-  info.style.display = 'block';
+  if(signIn){
+    signIn.style.display = 'none';
+  }
+  if(info){
+    info.style.display = 'block';
+  }
   var img = document.createElement('img');
   img.setAttribute('class', 'pic');//create image element
   img.setAttribute('src', '.' + myData[j].image);// append src to img tag
   var ul = document.createElement('ul');
   ul.setAttribute('class', 'info');
   ul.innerHTML = '<li>' + myData[j].name + '</li><li id="win"> Wins: ' + myData[j].wins + '</li><li id="loss">Losses: ' + myData[j].losses + '<li id="score">Win: ' + myData[j].score() + '%</li></li><button id="update" type="submit">update</button>';
-  info.appendChild(img);
-  info.appendChild(ul);
-  document.getElementById('blah').appendChild(info);
+  if(info){
+    info.appendChild(img);
+    info.appendChild(ul);
+    document.getElementById('blah').appendChild(info);
+  }
   return;
 };
 //others info
@@ -79,6 +85,7 @@ function updateScore(event){
   winUpdate();
   lossUpdate();
   document.getElementById('score').innerText = 'Win: ' + myData[j].score() + '%';
+  localStorage.setItem('myDataBackup', JSON.stringify(myData));
 }
 //update winnig game number
 function winUpdate(){

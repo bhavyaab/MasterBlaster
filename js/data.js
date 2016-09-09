@@ -110,3 +110,13 @@ var myData = [
     losses: 40,
   }
 ];
+//update my data with localStorage
+if(localStorage.myDataBackup){
+  var storeData = JSON.parse(localStorage.getItem('myDataBackup'));
+  for( var i = 0; i < storeData.length; i++){
+    if(myData[i].userName === storeData[i].userName){
+      myData[i].wins = storeData[i].wins;
+      myData[i].losses = storeData[i].losses;
+    };
+  }
+}
