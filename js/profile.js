@@ -11,6 +11,30 @@ if(info){
 if(up){
   up.style.display = 'none'; // hiding the update page
 }
+//add userName and passWord input area form DOM
+//check if username and password is right
+function check(event){
+  event.preventDefault();
+  var username = event.target.userName.value;
+  var password = event.target.passWord.value;
+  for(var i = 0; i < myData.length; i++){
+    if(username === myData[i].userName && password === myData[i].passWord){
+      localStorage.signIn = username;
+      console.log(i);
+      var j = i;
+      location.reload();
+    };
+  }
+  if(isNaN(j)){                                        //Error catching for wrong input
+    signIn.style.display = 'block';
+    info.style.display = 'none';
+    alert('username or password is worng!!');
+    location.reload();
+  };
+  showInfo(j);
+  others();
+  return j;
+};
 //declear function to show up info
 function showInfo(j) {
   if(signIn){
@@ -55,30 +79,7 @@ if(localStorage.signIn){
     };
   }
 }
-//add userName and passWord input area form DOM
-//check if username and password is right
-function check(event){
-  event.preventDefault();
-  var username = event.target.userName.value;
-  var password = event.target.passWord.value;
-  for(var i = 0; i < myData.length; i++){
-    if(username === myData[i].userName && password === myData[i].passWord){
-      localStorage.signIn = username;
-      console.log(i);
-      var j = i;
-      location.reload();
-    };
-  }
-  showInfo(j);
-  others();
-  //Error catching for wrong input
-  if(!j) {
-    signIn.style.display = 'block';
-    info.style.display = 'none';
-    alert('username or password is worng!!');
-  };
-  return j;
-};
+
 //update scores
 function updateScore(event){
   event.preventDefault();
