@@ -80,13 +80,14 @@ main {
 
 .wwa_text {
   position: absolute;
-  right: 0;
+  right: 15px;
   bottom: 0;
-  width: 400px;
+  width: 440px;
   height: 315px;
-  padding: 0 30px 0 30px;
+  padding: 0 0 0 0;
   font-family: 'Droid Sans', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 120%;
   color: rgb(242,242,242);
   text-align: left;
 }
@@ -128,11 +129,12 @@ main {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 400px;
+  width: 440px;
   height: 315px;
-  padding: 0 30px 0 30px;
+  padding: 0 10px 0 10px;
   font-family: 'Droid Sans', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 120%;
   color: rgb(242,242,242);
   text-align: left;
 }
