@@ -1,4 +1,4 @@
-#MasterBlaster
+#Ping Fellows
 
 User Stories (MVP)
 
