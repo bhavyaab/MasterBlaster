@@ -2,9 +2,15 @@
 var signIn = document.getElementById('login_form');
 var info = document.getElementById('info');
 var up = document.getElementById('up');
-signIn.style.display = 'block';
-info.style.display = 'none';
-up.style.display = 'none' // hiding the update page
+if(signIn){
+  signIn.style.display = 'block';
+}
+if(info){
+  info.style.display = 'none';
+}
+if(up){
+  up.style.display = 'none'; // hiding the update page
+}
 //declear function to show up info
 function showInfo(j) {
   signIn.style.display = 'none';
@@ -40,14 +46,9 @@ if(localStorage.signIn){
       var j = i;
       showInfo(j);
       others();
-      localStorage.wins = myData[i].wins;
-      localStorage.losses = myData[i].losses;
-
     };
   }
 }
-
-
 //add userName and passWord input area form DOM
 //check if username and password is right
 function check(event){
@@ -57,6 +58,7 @@ function check(event){
   for(var i = 0; i < myData.length; i++){
     if(username === myData[i].userName && password === myData[i].passWord){
       localStorage.signIn = username;
+      console.log(i);
       var j = i;
       location.reload();
     };
@@ -76,8 +78,9 @@ function updateScore(event){
   event.preventDefault();
   winUpdate();
   lossUpdate();
-  document.getElementById('score').innerText = 'wins: ' + myData[j].score() + '%';
+  document.getElementById('score').innerText = 'Win: ' + myData[j].score() + '%';
 }
+//update winnig game number
 function winUpdate(){
   event.preventDefault();
   var x = parseInt(prompt('win'));
@@ -88,12 +91,11 @@ function winUpdate(){
   if(typeof x === 'number'){
     myData[j].wins = myData[j].wins + x;
     console.log('x = ', x,'win= ', myData[j].wins);
-    myData[j].score();
-    document.getElementById('win').innerText = 'wins: ' + myData[j].wins;
+    document.getElementById('win').innerText = 'Wins: ' + myData[j].wins;
   };
 };
 
-
+//update loss score numbers
 function lossUpdate(){
   event.preventDefault();
   var x = parseInt(prompt('loss'));
@@ -104,11 +106,9 @@ function lossUpdate(){
   if(typeof x === 'number'){
     myData[j].losses = myData[j].losses + x;
     console.log('x = ', x,'loss= ', myData[j].losses);
-    document.getElementById('loss').innerText = 'losses: ' + myData[j].losses;
+    document.getElementById('loss').innerText = 'Losses: ' + myData[j].losses;
   };
 }
-
-
 //logout feature
 function logOut(event){
   event.preventDefault();
