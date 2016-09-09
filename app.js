@@ -3,6 +3,7 @@ var scores = [];
 for(i = 0; i < myData.length; i++){
   scores.push(myData[i].score());
 };
+
 //short array ranking by order off smaller to higher
 
 function compareNumbers(a, b){
