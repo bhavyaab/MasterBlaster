@@ -87,6 +87,7 @@ function updateScore(event){
   lossUpdate();
   document.getElementById('score').innerText = 'Win: ' + myData[j].score() + '%';
   localStorage.setItem('myDataBackup', JSON.stringify(myData));
+  location.reload();
 }
 //update winnig game number
 function winUpdate(){
